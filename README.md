@@ -17,6 +17,6 @@ Derfor er ideen, at få data fra ISS Tracking API ned til Particle Argon. Derudo
 
 F.eks. kan det tænkes, at følgende status kan implementeres: 
 
-Rød LED: Rumstationen er ikke i nærheden af din by
-Gul LED: Rumstationen er i nærheden af din by, men det er lyst
-Grøn LED: Rumstationen er i nærheden af din by og det er mørkt. 
+- Rød LED: Rumstationen er ikke i nærheden af din by
+- Gul LED: Rumstationen er i nærheden af din by, men det er lyst
+- Grøn LED: Rumstationen er i nærheden af din by og det er mørkt. 

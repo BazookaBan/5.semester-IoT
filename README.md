@@ -13,7 +13,7 @@ Forløbig ide:
 
 Rumstationen ISS flyver konstant rundt om jorden og viser sig ved forskellige geografiske steder på jorden til forskellige tidspunkter. Ønsker man at se ISS med egne øjne, så skal primært to krav være opfyldt: 1. den skal være synlig fra den by du befinder dig i og 2. det skal gerne være mørkt. 
 
-Derfor er ideen, at få data fra ISS Tracking API ned til Particle Argon. Derudover skal der tilkobles en lyssensor til Partile Argon som kan måle om det er mørkt eller lyst. PÅ baggrund af de to oplysninger skal en LED indikere om det på nuværende tidspunkt er en god ide at gå og kigge efter ISS rumstationen. 
+Derfor er ideen, at få data fra ISS Tracking API ned til Particle Argon. Derudover skal der tilkobles en lyssensor til Partile Argon som kan måle om det er mørkt eller lyst. På baggrund af de to oplysninger skal en LED indikere om det på nuværende tidspunkt er en god ide at gå og kigge efter ISS rumstationen. 
 
 F.eks. kan det tænkes, at følgende status kan implementeres: 
 

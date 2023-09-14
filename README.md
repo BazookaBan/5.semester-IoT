@@ -22,6 +22,6 @@ F.eks. kan det tænkes, at følgende statusser kan implementeres:
 - Grøn LED: Rumstationen er i nærheden af din by og det er mørkt.
 
 
-  Opdatering 14/9/23
+Opdatering 14/9/23
 
-  Ideen er som udgangspunkt godkendt. Forslag til udbyggelse: magnetometer+accelerometer som kan tilkobles projektet og via LED lys give en indikation om man kigger i den rigtige retning. 
+Ideen er som udgangspunkt godkendt. Forslag til udbyggelse: magnetometer+accelerometer som kan tilkobles projektet og via LED lys give en indikation om man kigger i den rigtige retning. 

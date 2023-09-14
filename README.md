@@ -33,3 +33,4 @@ Ideen er som udgangspunkt godkendt. Forslag til udbyggelse: magnetometer+acceler
 Interressante links:
 
 https://spotthestation.nasa.gov/tracking_map.cfm     Som er NASAs tracking i webform med angivelse af position +/- 90 minutter (som er tiden ISS bruger på en omgang omkring jorden)
+https://wheretheiss.at/                              Som er et Tracking API

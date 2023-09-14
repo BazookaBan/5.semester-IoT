@@ -19,4 +19,9 @@ F.eks. kan det tænkes, at følgende statusser kan implementeres:
 
 - Rød LED: Rumstationen er ikke i nærheden af din by
 - Gul LED: Rumstationen er i nærheden af din by, men det er lyst
-- Grøn LED: Rumstationen er i nærheden af din by og det er mørkt. 
+- Grøn LED: Rumstationen er i nærheden af din by og det er mørkt.
+
+
+  Opdatering 14/9/23
+
+  Ideen er som udgangspunkt godkendt. Forslag til udbyggelse: magnetometer+accelerometer som kan tilkobles projektet og via LED lys give en indikation om man kigger i den rigtige retning. 

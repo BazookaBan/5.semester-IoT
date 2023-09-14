@@ -22,6 +22,14 @@ F.eks. kan det tænkes, at følgende statusser kan implementeres:
 - Grøn LED: Rumstationen er i nærheden af din by og det er mørkt.
 
 
+Løbende opdateringer
+
+
 Opdatering 14/9/23
 
 Ideen er som udgangspunkt godkendt. Forslag til udbyggelse: magnetometer+accelerometer som kan tilkobles projektet og via LED lys give en indikation om man kigger i den rigtige retning. 
+
+
+Interressante links:
+
+https://spotthestation.nasa.gov/tracking_map.cfm     Som er NASAs tracking i webform med angivelse af position +/- 90 minutter (som er tiden ISS bruger på en omgang omkring jorden)

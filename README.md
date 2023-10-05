@@ -1,5 +1,5 @@
 # 5.semester-IoT
-Ide- projektbeskrivelse for IoT-projektet
+#Ide- projektbeskrivelse for IoT-projektet
 
 
 Projeket skal have følgende krav opfyldt:
@@ -15,12 +15,6 @@ Rumstationen ISS flyver konstant rundt om jorden og viser sig ved forskellige ge
 
 Derfor er ideen, at få data fra ISS Tracking API ned til Particle Argon. Derudover skal der tilkobles en magnetometer til Partile Argon som kan måle retningen du kigger i. På baggrund af de to oplysninger skal det fremgå af konsolen hvorvidt du peger Particle Argon i den rigtige retning for at øge dine chancer for at se rumstationen på himmelen. 
 
-F.eks. kan det tænkes, at følgende statusser kan implementeres: 
-
-- Rød LED: Rumstationen er ikke i nærheden af din by
-- Gul LED: Rumstationen er i nærheden af din by, men det er lyst
-- Grøn LED: Rumstationen er i nærheden af din by og det er mørkt.
-
 
 Løbende opdateringer
 
@@ -34,6 +28,13 @@ Opdatering 5/10/23
 
 Udskiftet lokal sensor til magnetometer for at kunne give brugeren muligheden for at vide, hvorvidt han kigger den rigtige retning efter ISS rumstationen. Den oprindelige ide med LED-status for optimale tidspunkter at kigge efter ISS rumstationen kan evt. bruges i projektet senere hen, hvor man i stedet for konsollen kan kigge på en LED og se om man kigger det rigtige sted hen. Projektet ideen herover er opdateret med denne nye tilgang.  
 
+Status for LED kunne f.eks. være:
+
+F.eks. kan det tænkes, at følgende statusser kan implementeres: 
+
+- Rød LED: Du kigger den forkerte retning
+- Gul LED: Du er tæt på/indenfor XX antal grader 
+- Grøn LED: Du peger direkte mod ISS rumstationen.
 
 Interressante links:
 

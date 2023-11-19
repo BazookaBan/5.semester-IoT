@@ -27,6 +27,9 @@ Derfor er ideen, at få data fra ISS Tracking API ned til Particle Argon. Derudo
 
 ## 4.0 System design
 
+Det  
+
+
 ## 5.0 Implementering
 
 ## 6.0 Test & Verifikation
@@ -40,7 +43,7 @@ Derfor er ideen, at få data fra ISS Tracking API ned til Particle Argon. Derudo
 
 19/11/2023
 
-Større opdatering af Github beskrivelsen af projektet.
+Større opdatering på Github af projektet. 
 
 Oktober 2023
 

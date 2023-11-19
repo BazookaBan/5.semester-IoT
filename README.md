@@ -1,4 +1,5 @@
 # 5.semester - IoT
+Af Jannik Thygesen
 
 ## 1.0 Introduktion 
 

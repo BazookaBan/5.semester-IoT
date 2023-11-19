@@ -45,9 +45,6 @@ Oktober 2023
 
 Der arbejdes med at få data fra tracking API vist lokalt i terminal på Visual Studio Code(VSC). Der er oprettet et Webhook som modtager data fra API og bagefter bruges "particle.subscribe" til at få adgang til dette data. Der er dog store udfordringer med at få vist dette data i .json format i terminalen på VSC.
 
-Opdatering 14/9/23
-
-Ideen er som udgangspunkt godkendt. Forslag til udbyggelse: magnetometer+accelerometer som kan tilkobles projektet og via LED lys give en indikation om man kigger i den rigtige retning. 
 
 
 Opdatering 5/10/23
@@ -64,5 +61,9 @@ F.eks. kan det tænkes, at følgende statusser kan implementeres:
 
 Interressante links:
 
-https://spotthestation.nasa.gov/tracking_map.cfm     Som er NASAs tracking i webform med angivelse af position +/- 90 minutter (som er tiden ISS bruger på en omgang omkring jorden)
-https://wheretheiss.at/                              Som giver løbende tracking data
+- https://spotthestation.nasa.gov/tracking_map.cfm     Som er NASAs tracking i webform med angivelse af position +/- 90 minutter (som er tiden ISS bruger på en omgang omkring jorden)
+- https://wheretheiss.at/                              Som giver løbende tracking data
+
+Opdatering 14/9/23
+
+Ideen er som udgangspunkt godkendt. Forslag til udbyggelse: magnetometer+accelerometer som kan tilkobles projektet og via LED lys give en indikation om man kigger i den rigtige retning. 

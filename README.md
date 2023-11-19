@@ -27,7 +27,13 @@ Derfor er ideen, at få data fra ISS Tracking API ned til Particle Argon. Derudo
 
 ## 4.0 System design
 
-Det  
+Grundlæggende opbygning:
+
+For at få data udefra: Der er oprettet et Webhook som er forbundet til ISS tracking API. Fra VSU bruges "particle.subscribe" til at få adgang til dette data og dette skal vises i terminalen.
+
+For at få data lokalt: Magnetometer skal tilkobles og skal give brugeren informationer om hvilken retning Particle peger i. 
+
+Funktionalitet: Den nuværende retning sammen med data om ISS' nuværende position skal give brugeren en ide om, hvorvidt brugeren kan forvente at se ISS rumstationen i den retning. 
 
 
 ## 5.0 Implementering

@@ -49,7 +49,8 @@ Funktionalitet: Den nuværende retning sammen med data om ISS' nuværende positi
 
 *4/12/2023
 
-Holde der modtager API data og printer dette til console samt laver publish til events, er nu lagt online sammen med eksempel på output. 
+Kode der modtager API data og printer dette til console samt laver publish til events, er nu lagt online sammen med eksempel på output. 
+Fortsat en udfordring at få brug JsonParser til at scanne for data og placere i variabler som der kan laves beregninger på. 
 
 *19/11/2023*
 

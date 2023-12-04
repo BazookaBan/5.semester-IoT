@@ -47,6 +47,10 @@ Funktionalitet: Den nuværende retning sammen med data om ISS' nuværende positi
 
 ## 8.0 Løbende opdateringer
 
+*4/12/2023
+
+Holde der modtager API data og printer dette til console samt laver publish til events, er nu lagt online sammen med eksempel på output. 
+
 *19/11/2023*
 
 Større opdatering på Github af projektet. 

@@ -48,7 +48,7 @@ Funktionalitet: Den nuværende retning sammen med data om ISS' nuværende positi
 
 ## 5.0 Implementering
 
-- Vedr. Krav 1:
+- Vedr. Krav 1:\
   Som IDE installeret Microsofts Visual Studio Code(herefter VSC) og der installeres udvidelsespakken "Particle Workbench" som giver mulighed for at interagere med Particle Argon direkte fra VSC, herunder at opdatere firmware, installere 3. parts biblioteker, compile kode og flashe denne direkte.
 
 

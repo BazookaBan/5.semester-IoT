@@ -89,10 +89,8 @@ Som angivet i ovenstående afsnit, så testes hver enkelt funktion med tilhøren
   Der tages udgangspunkt i den første kode der arbejdes med i dette kursus, hvilket er [koden tilhørende det første Webhook](https://docs.particle.io/integrations/webhooks/). Denne modificeres til brug i dette projekt og den færdige kode kan ses i "API_data.ino" filen. Et eksempel på hvordan output ser ud kan findes i "API_data_OUTPUT.png" filen og herunder:
 
   <div align="center">
-  <img src="https://github.com/BazookaBan/5.semester-IoT/blob/main/API_data_OUTPUT.png" alt="Your Image Description">
+  <img src="https://github.com/BazookaBan/5.semester-IoT/blob/main/API_data_OUTPUT.png" alt="API output">
 </div>
-
-  ![Output1](https://github.com/BazookaBan/5.semester-IoT/blob/main/API_data_OUTPUT.png "Output API")
 
 - **Krav 3**
   For dette krav importeres den tidligere omtalte kode fra anden Github side. Herefter forbindes sensoren til Particle Argon via SCL og SCA som vist på tegningen herunder:
@@ -119,7 +117,11 @@ Som angivet i ovenstående afsnit, så testes hver enkelt funktion med tilhøren
 - **Krav 4**
 Efter arbejdet med ovenstående krav - især omkring krav 3 - samles de to koder til en enkelt. Dette gøres for at kunne drive projektet fremad trods ikke alle funktionerne virker helt efter hensigten. Den samlede kode kan ses i "IoT_Merged.cpp" filen og et eksempel på hvordan resultatet ser ud ses i "IoT_Merged_OUTPUT.png" filen og herunder:
 
-![Output3](https://github.com/BazookaBan/5.semester-IoT/blob/main/IoT_Merged_OUTPUT.png "Output IoT Merged")
+
+<div align="center">
+  <img src="https://github.com/BazookaBan/5.semester-IoT/blob/main/IoT_Merged_OUTPUT.png" alt="IoT Merged Output">
+</div>
+
   
 
   

@@ -86,7 +86,7 @@ Som angivet i ovenstående afsnit, så testes hver enkelt funktion med tilhøren
   Dette krav testet ved at være et fungerende udviklingsmiljø inden arbejdet med denne opgave startes. Dog opnås aldrig adgang til funktionen "local compile" som sikre, at der kan compiles på lokalt på device. Der fremkommer fejl relateret til C++ compileren, og selvom denne fjernes og installeres igen, så udbedres problemet ikke. Løsningen bliver i stedet, at bruge "cloud compile" som gør, at beskeden om at compile et program sendes via internettet i stedet for lokalt via USB-kabel. Dette tager en smule længere tid, men accepteres som en fornuftig løsning.
 
 - **Krav 2**
-  Der tages udgangspunkt i den første kode der arbejdes med i dette kursus, hvilket er [koden tilhørende det første Webhook](https://docs.particle.io/integrations/webhooks/). Denne modificeres til brug i dette projekt og den færdige kode kan ses i "API_data.ino" filen. Et eksempel på hvordan output ser ud kan findes i "API_data_OUTPUT" filen og herunder:
+  Der tages udgangspunkt i den første kode der arbejdes med i dette kursus, hvilket er [koden tilhørende det første Webhook](https://docs.particle.io/integrations/webhooks/). Denne modificeres til brug i dette projekt og den færdige kode kan ses i "API_data.ino" filen. Et eksempel på hvordan output ser ud kan findes i "API_data_OUTPUT.png" filen og herunder:
 
   ![Output1](https://github.com/BazookaBan/5.semester-IoT/blob/main/API_data_OUTPUT.png "Output API")
 
@@ -96,7 +96,7 @@ Som angivet i ovenstående afsnit, så testes hver enkelt funktion med tilhøren
 
   "INDSÆT TEGNING!\
 
-  Efter sensoren er forbundet så indlæses indholdet af "HMC5883.cpp" til device og et eksempel på hvordan resultatet ser ud ses i "HMC5883_OUTPUT" filen og herunder:
+  Efter sensoren er forbundet så indlæses indholdet af "HMC5883.cpp" til device og et eksempel på hvordan resultatet ser ud ses i "HMC5883_OUTPUT.png" filen og herunder:
 
   ![Output2](https://github.com/BazookaBan/5.semester-IoT/blob/main/HCM5883_OUTPUT.png "Output Sensor")
 
@@ -113,7 +113,9 @@ Som angivet i ovenstående afsnit, så testes hver enkelt funktion med tilhøren
 
 
 - **Krav 4**
+Efter arbejdet med ovenstående krav - især omkring krav 3 - samles de to koder til en enkelt. Dette gøres for at kunne drive projektet fremad trods ikke alle funktionerne virker helt efter hensigten. Den samlede kode kan ses i "IoT_Merged.cpp" filen og et eksempel på hvordan resultatet ser ud ses i "IoT_Merged_OUTPUT.png" filen og herunder:
 
+![Output3](https://github.com/BazookaBan/5.semester-IoT/blob/main/IoT_Merged_OUTPUT.png "Output IoT Merged")
   
 
   

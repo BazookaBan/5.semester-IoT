@@ -3,7 +3,7 @@ Af Jannik Thygesen, studienummer
 
 ## 1.0 Introduktion 
 
-Sideløbende med undervisningen i "EH5IOT-01 Internet of Things" arbejdes der på et IoT projekt. Arbejdet med dette projekt dokumenteres løbende i denne rapport og ved afslutningen af semeseret, så afleveres rapporten via Digital Eksamen på AU. 
+Sideløbende med undervisningen i "EH5IOT-01 Internet of Things" arbejdes der på et IoT-projekt. Arbejdet med dette projekt dokumenteres løbende i denne rapport og ved afslutningen af semeseret, så afleveres rapporten via Digital Eksamen. 
 
 Projeket skal have disse grundlæggende krav opfyldt(fuld liste ses på Brightspace, Exam Project):
 
@@ -30,7 +30,7 @@ Derfor er ideen, at få data fra ISS Tracking API ned til Particle Argon. Derudo
   Fra Particle Console oprettes et Webhook der peger på en webpage med positionsoplysninger for ISS som API data. Da API-linket returnerer flere oplysninger end der skal bruges i dette projekt, så er der lavet en sortering af disse under "Advanced Setting".
 
 - Krav 3:
-  Der er valgt et HCM5883 magnetometer til dette projektet. Denne lokale sensor måler magnetisk styrke i et X-Y-Z-plan, og resultatet af dette kan bruges til beregningen af retningen sensoren vender.
+  Der er valgt et HMC5883 magnetometer til dette projektet. Denne lokale sensor måler magnetisk styrke i et X-Y-Z-plan, og resultatet af dette kan bruges til beregningen af retningen sensoren vender.
 
 - Krav 4:
   Ved at sammenkoble ovenstående tre krav, så opfylder systemet kravene til projektet ved at indeholde internetdata samt lokal data og derudover, at virke bedre end ikke at være forbundet til internettet. I dette projekt ses det ved at give oplysninger om placeringen af rumstationen ISS. Uden disse oplysninger ville det være umuligt for brugeren at vide hvilken retning der skulle kigges i. 
@@ -64,14 +64,13 @@ For at få indarbejdet de opstillede krav til opgaven, så arbejdes der primært
 
   Latitude: {{latitude}},\
   Longitude: {{longitude}},\
-  Visibility: {{visibility}},\
+  Visibility: {{visibility}},
 
 Dette gøres, da API-linket returnerer en del informationer som ikke er relevante for dette projekt, f.eks. hastigheden, timestamps og position ifht. solen, så bruges ovenstående til at kun lade de relevante data passere til koden når eventet "tracking" bliver kaldt. 
 
   -Vedr. Krav 3:\
+Der indkøbes en[indkøbes en HMC5883 sensor fra Arduinotech](https://arduinotech.dk/shop/3-axis-electronic-compass-magnetometer-sensor-module/) til brug i dette projekt. Denne er valgt, da den opfylder de basale krav om at kunne måle magnetisk kraft i X, Y og Z retning samtidigt med, der var umiddelbart understøttelse af denne sensor gennem [Particle Liberaies HMC5883](https://docs.particle.io/reference/device-os/libraries/a/Adafruit_HMC5883/). 
 
-
-[Testing](https://docs.particle.io/getting-started/device-os/firmware-libraries/)
 
   
 

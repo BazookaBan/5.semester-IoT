@@ -53,6 +53,10 @@ Funktionalitet: Den nuværende retning sammen med data om ISS' nuværende positi
 
 *14/12/2023*
 
+Sammenlagt to koder der hhv. arbejder med API data og Sensor data til én samlet kode(IoT_Merged) sammen med eksempel på output(IoT_Merged_OUTPUT).
+
+*14/12/2023*
+
 Kode der aflæser lokal sensor og laver publish til til events, er nu lagt online(HMC5883) sammen med eksempel på output(HMC5883_OUTPUT).
 
 *4/12/2023*

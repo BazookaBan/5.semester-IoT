@@ -44,17 +44,28 @@ For at få data udefra: Der er oprettet et Webhook som er forbundet til ISS trac
 For at få data lokalt: Magnetometer skal tilkobles og skal give brugeren informationer om hvilken retning Particle peger i. 
 
 Funktionalitet: Den nuværende retning sammen med data om ISS' nuværende position skal give brugeren en ide om, hvorvidt brugeren kan forvente at se ISS rumstationen i den retning. 
-
+Latitude = Breddegrad. Angiver en position nord for ækvator 
 
 ## 5.0 Implementering
 
 - Vedr. krav 1:\
-  Particle Argon forbundes med USB-kabel til computeren og herefter oprettes forbindelse til lokalt Wi-Fi netværk. Der oprettes en konto på "Particle Console" som giver mulighed for at overvåge aktiviteten for ens device, oprette og redigere Webhooks, følge med i events samt meget andet. \
-  Som IDE installeres Microsofts Visual Studio Code(herefter VSC) og der installeres udvidelsespakken "Particle Workbench" som giver mulighed for at interagere med Particle Argon direkte fra VSC, herunder at opdatere firmware, installere 3. parts biblioteker, compile kode og flashe denne direkte.\
+  Particle Argon forbundes med USB-kabel til computeren og herefter oprettes forbindelse til lokalt Wi-Fi netværk. Der oprettes en konto på "Particle Console" som giver mulighed for at overvåge aktiviteten    for ens device, oprette og redigere Webhooks, følge med i events samt meget andet. \
+  Som IDE installeres Microsofts Visual Studio Code(herefter VSC) og der installeres udvidelsespakken "Particle Workbench" som giver mulighed for at interagere med Particle Argon direkte fra VSC, herunder     at opdatere firmware, installere 3. parts biblioteker, compile kode og flashe denne direkte.\
 
 - Vedr. krav 2:\
-  Der oprettes et Webhook kaldet "ISS Tracking" med et event kaldet "Tracking". Da der skal importeres data ind til Particle Argon, så angives request type som "Get" og der angives følgende link som kilde til positionsoplysninger for ISS:\
-  https://api.wheretheiss.at/v1/satellites/25544 \
+  Der oprettes et Webhook kaldet "ISS Tracking" med et event kaldet "Tracking". Da der skal importeres data ind til Particle Argon, så angives request type som "Get" og der angives følgende link som kilde 
+  til positionsoplysninger for ISS:\
+  https://api.wheretheiss.at/v1/satellites/25544\
+  Under Advanced Settings angives følgende parametre:\
+
+  Latitude: {{latitude}},
+  Longitude: {{longitude}},
+  Visibility: {{visibility}}\
+
+  Da API-linket returnerer en del informationer som ikke er relevante for dette projekt, f.eks. hastigheden, timestamp og position ifht. solen, så bruges ovenstående til at kun lade de relevante data passere til koden:\
+
+  
+  
   
   
 ## 6.0 Test & Verifikation

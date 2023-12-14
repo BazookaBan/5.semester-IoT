@@ -89,7 +89,7 @@ Som angivet i ovenstående afsnit, så testes hver enkelt funktion med tilhøren
   Der tages udgangspunkt i den første kode der arbejdes med i dette kursus, hvilket er [koden tilhørende det første Webhook](https://docs.particle.io/integrations/webhooks/). Denne modificeres til brug i dette projekt og den færdige kode kan ses i "API_data.ino" filen. Et eksempel på hvordan output ser ud kan findes i "API_data_OUTPUT.png" filen og herunder:
 
   <div align="center">
-  <img src="https://github.com/BazookaBan/5.semester-IoT/blob/main/API_data_OUTPUT.png" alt="API output">
+  <img src="https://github.com/BazookaBan/5.semester-IoT/blob/main/API_data_OUTPUT.png" alt="API output" width="300" height="200">
 </div>
 
 - **Krav 3**
@@ -119,7 +119,7 @@ Efter arbejdet med ovenstående krav - især omkring krav 3 - samles de to koder
 
 
 <div align="center">
-  <img src="https://github.com/BazookaBan/5.semester-IoT/blob/main/IoT_Merged_OUTPUT.png" alt="IoT Merged Output">
+  <img src="https://github.com/BazookaBan/5.semester-IoT/blob/main/IoT_Merged_OUTPUT.png" alt="IoT Merged Output" width="300" height="200">
 </div>
 
   

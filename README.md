@@ -48,6 +48,8 @@ Latitude = Breddegrad. Angiver en position nord for ækvator
 
 ## 5.0 Implementering
 
+For at få indarbejdet de opstillede krav til opgaven, så arbejdes der primært med disse én ad gangen. Dette sikre større overblik og kontrol over de enkelte funktioner, men gør det også nemmere for projektet, da der løbende kan bygges ovenpå eksisterende løsninger efterhånden som de kan verfificeres. 
+
 - Vedr. krav 1:\
   Particle Argon forbundes med USB-kabel til computeren og herefter oprettes forbindelse til lokalt Wi-Fi netværk. Der oprettes en konto på "Particle Console" som giver mulighed for at overvåge aktiviteten    for ens device, oprette og redigere Webhooks, følge med i events samt meget andet. \
   Som IDE installeres Microsofts Visual Studio Code(herefter VSC) og der installeres udvidelsespakken "Particle Workbench" som giver mulighed for at interagere med Particle Argon direkte fra VSC, herunder     at opdatere firmware, installere 3. parts biblioteker, compile kode og flashe denne direkte.\
@@ -60,13 +62,20 @@ Latitude = Breddegrad. Angiver en position nord for ækvator
   
   Under Advanced Settings angives følgende parametre til Response Template:\
 
-  Latitude: {{latitude}},
-  Longitude: {{longitude}},
-  Visibility: {{visibility}},
+  Latitude: {{latitude}},\
+  Longitude: {{longitude}},\
+  Visibility: {{visibility}},\
 
 Dette gøres, da API-linket returnerer en del informationer som ikke er relevante for dette projekt, f.eks. hastigheden, timestamps og position ifht. solen, så bruges ovenstående til at kun lade de relevante data passere til koden når eventet "tracking" bliver kaldt. 
 
-  -Vedr. Krav 3:
+  -Vedr. Krav 3:\
+
+
+[Testing](https://docs.particle.io/getting-started/device-os/firmware-libraries/)
+
+  
+
+  
 
   
 

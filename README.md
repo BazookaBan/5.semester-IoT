@@ -1,5 +1,5 @@
 # 5.semester - IoT
-Af Jannik Thygesen, 
+Af Jannik Thygesen, studienummer 
 
 ## 1.0 Introduktion 
 
@@ -33,11 +33,11 @@ Derfor er ideen, at få data fra ISS Tracking API ned til Particle Argon. Derudo
   Der er valgt et HCM5883 magnetometer til dette projektet. Denne lokale sensor måler magnetisk styrke i et X-Y-Z-plan, og resultatet af dette kan bruges til beregningen af retningen sensoren vender.
 
 - Krav 4:
-  Ved at sammenkoble ovenstående tre krav, så opfylder systemet kravene til projektet ved at indeholde internetdata samt lokal data og derudover, at virke bedre end ikke at være forbundet til internettet. I dette projekt ses ved at give oplysninger om placeringen af rumstationen ISS. Uden disse oplysninger ville det være umuligt for brugeren at vide hvilken retning der skulle kigges i. 
+  Ved at sammenkoble ovenstående tre krav, så opfylder systemet kravene til projektet ved at indeholde internetdata samt lokal data og derudover, at virke bedre end ikke at være forbundet til internettet. I dette projekt ses det ved at give oplysninger om placeringen af rumstationen ISS. Uden disse oplysninger ville det være umuligt for brugeren at vide hvilken retning der skulle kigges i. 
 
 ## 4.0 System design
 
-Grundlæggende opbygning:
+Grundlæggende er 
 
 For at få data udefra: Der er oprettet et Webhook som er forbundet til ISS tracking API. Fra VSU bruges "particle.subscribe" til at få adgang til dette data og dette skal vises i terminalen.
 
@@ -48,6 +48,11 @@ Funktionalitet: Den nuværende retning sammen med data om ISS' nuværende positi
 
 ## 5.0 Implementering
 
+- Vedr. Krav 1:
+  Som IDE installeret Microsofts Visual Studio Code(herefter VSC) og der installeres udvidelsespakken "Particle Workbench" som giver mulighed for at interagere med Particle Argon direkte fra VSC, herunder at opdatere firmware, installere 3. parts biblioteker, compile kode og flashe denne direkte.
+
+
+  
 ## 6.0 Test & Verifikation
 
 ## Aspekter af Cyber Security
@@ -61,7 +66,7 @@ Funktionalitet: Den nuværende retning sammen med data om ISS' nuværende positi
 
 
 
-## 8.0 Løbende opdateringer
+## 9.0 Løbende opdateringer
 
 *14/12/2023*
 

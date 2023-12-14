@@ -1,24 +1,38 @@
 // Kode stammer fra: https://github.com/ControlEverythingCommunity/HMC5883/blob/master/Particle/HMC5883.ino 
-// og kan compile og afvikles. Der skal tilføjes Heading/Direction omregning ligesom afsnittet med Particle.publish skal omskrives til Serial.Print
-// Afslutningsvis kan sensor forsøges indstilles ligesom mindre modstande kan overvejes. 
+// Der blevet tilføjet koden med API data. 
+// Kan bruges med cloud compile og cloud flash med ønsket output i terminal. 
+// På Particle.Console ses flere data som danner baggrund for de informationer der ses i terminal. 
+// Der er sorteret informationer fra i Webhook settings. 
 
 #include <application.h>
 #include <spark_wiring_i2c.h>
 #include <math.h>
+//#include <particle.h>
+
 // HMC5883 I2C address is 0x1E(30)
 #define Addr 0x1E
 
 int xMag = 0, yMag =  0, zMag = 0;
 double heading;
+String TrackingData;
+
+void myHandler(const char *event, const char *data){        // This function prints when triggered
+  TrackingData = data;
+  Serial.printf("The ISS space station is currently at: \n ");
+  Serial.printf(data);
+  Serial.println();
+  }
 
 void setup()
 {
-    // Set variable
+    // Set variables for Particle Cloud access 
     Particle.variable("i2cdevice", "HMC5883");
     Particle.variable("xMag", xMag);
     Particle.variable("yMag", yMag);
     Particle.variable("zMag", zMag);
     Particle.variable("Heading", heading);
+
+    Particle.subscribe("hook-response/Tracking", myHandler, MY_DEVICES); //connected to API data code 
   
     // Initialise I2C communication as MASTER
     Wire.begin();
@@ -71,7 +85,7 @@ void loop()
     }
     delay(300);
       
-    // Convert the data 
+    // Convert the data from sensor readings
     xMag = ((data[0] * 256) + data[1]);
     if(xMag > 32767)
     {
@@ -93,7 +107,7 @@ void loop()
     {
         heading += 360.0;
     }
-        // Determine cardinal direction
+        // calculate cardinal direction
     String direction;
     if (heading >= 315 || heading < 45)
     {
@@ -122,4 +136,10 @@ void loop()
     Particle.publish("Heading: ", String(heading));
     delay(1000);
     Particle.publish("Direction: ", direction);
+    delay(1000);
+    Serial.print("Current direction of the sensor is: ");
+    Serial.println(direction);
+
+    String trackingData = TrackingData;     // These two lines connected to API data 
+    Particle.publish("Tracking", trackingData, PRIVATE);
 }

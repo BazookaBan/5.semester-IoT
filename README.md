@@ -88,6 +88,10 @@ Som angivet i ovenstående afsnit, så testes hver enkelt funktion med tilhøren
 - **Krav 2**
   Der tages udgangspunkt i den første kode der arbejdes med i dette kursus, hvilket er [koden tilhørende det første Webhook](https://docs.particle.io/integrations/webhooks/). Denne modificeres til brug i dette projekt og den færdige kode kan ses i "API_data.ino" filen. Et eksempel på hvordan output ser ud kan findes i "API_data_OUTPUT.png" filen og herunder:
 
+  <div align="center">
+  <img src="https://github.com/BazookaBan/5.semester-IoT/blob/main/API_data_OUTPUT.png" alt="Your Image Description">
+</div>
+
   ![Output1](https://github.com/BazookaBan/5.semester-IoT/blob/main/API_data_OUTPUT.png "Output API")
 
 - **Krav 3**

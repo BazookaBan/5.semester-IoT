@@ -100,7 +100,7 @@ Som angivet i ovenstående afsnit, så testes hver enkelt funktion med tilhøren
 
   Efter sensoren er forbundet så indlæses indholdet af "HMC5883.cpp" til device og et eksempel på hvordan resultatet ser ud ses i "HMC5883_OUTPUT.png" filen og herunder:
 
-  ![Output2](https://github.com/BazookaBan/5.semester-IoT/blob/main/HCM5883_OUTPUT.png "Output Sensor" width="500" height="400")
+  ![Output2](https://github.com/BazookaBan/5.semester-IoT/blob/main/HCM5883_OUTPUT.png "Output Sensor" width="500" height="400">
 
   På billedet kan det ses hvordan aflæsningerne for X, Z og Y planen sammen med omregningen til "heading" og "direction" vises på Particle Console(som Event). Data bliver flyttet fra sensoren til Particle Argon via I2C protokollen, og herefter til Particle Console med en Particle.publish kommando.
 

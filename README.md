@@ -68,22 +68,14 @@ For at få indarbejdet de opstillede krav til opgaven, så arbejdes der primært
 
 Dette gøres, da API-linket returnerer en del informationer som ikke er relevante for dette projekt, f.eks. hastigheden, timestamps og position ifht. solen, så bruges ovenstående til at kun lade de relevante data passere til koden når eventet "tracking" bliver kaldt. 
 
-  -Vedr. Krav 3:\
+-Vedr. krav 3:\
 Der indkøbes en [HMC5883 sensor fra Arduinotech](https://arduinotech.dk/shop/3-axis-electronic-compass-magnetometer-sensor-module/) til brug i dette projekt. Denne er valgt, da den opfylder de basale krav om at kunne måle magnetisk kraft i X, Y og Z retning, den kan drives med 3.3V direkte fra Particle Argon samtidigt med, der var umiddelbart understøttelse af denne sensor gennem [Particle Liberaies HMC5883](https://docs.particle.io/reference/device-os/libraries/a/Adafruit_HMC5883/). 
 
-Det lykkedes dog ikke at få denne firmware til køre på Particle Argon - formentligt grundet for store versionsforskelle mellem denne oprindelige firmware også de nyere der er tilgængelige. Der forsøges at bruge ældre firmware til Particle Argon, men uden held. Derfor importeres og bruges [følgende kode fra ControlEverything]( https://github.com/ControlEverythingCommunity/HMC5883/blob/master/Particle/HMC5883.ino). 
+Det lykkedes dog ikke at få denne firmware til køre på Particle Argon - formentligt grundet for store versionsforskelle mellem denne oprindelige firmware også de nyere der er tilgængelige. Der forsøges at bruge ældre firmware til Particle Argon, men uden held. Derfor importeres og bruges [følgende kode fra ControlEverything]( https://github.com/ControlEverythingCommunity/HMC5883/blob/master/Particle/HMC5883.ino). Koden gør brug af I2C kommunikationsprotokol til at forbinde mellem sensoren og Particle Argon. Efter aflæsninger omdannes målinger til enheden "Gauss" som repræsentation for mængden af magnetisk kraft. 
 
+Vedr. krav 4:
 
-  
-
-  
-
-  
-
-  
-   
-
-  
+Efter der er installeret og opsat en programmeringsmiljø(krav 1) til brug med Particle Argon, og efter der er kan hentes API-data ind og vist på terminalen(krav 2), og efter der er etableret forbindelse til en lokal sensor(krav 3), så laves en samlet kode hvor alle funktionerne bliver samlet. 
   
   
   

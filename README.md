@@ -89,7 +89,7 @@ Som angivet i ovenstående afsnit, så testes hver enkelt funktion med tilhøren
   Der tages udgangspunkt i den første kode der arbejdes med i dette kursus, hvilket er [koden tilhørende det første Webhook](https://docs.particle.io/integrations/webhooks/). Denne modificeres til brug i dette projekt og den færdige kode kan ses i "API_data.ino" filen. Et eksempel på hvordan output ser ud kan findes i "API_data_OUTPUT.png" filen og herunder:
 
   <div align="center">
-  <img src="https://github.com/BazookaBan/5.semester-IoT/blob/main/API_data_OUTPUT.png" alt="API output" width="300" height="200">
+  <img src="https://github.com/BazookaBan/5.semester-IoT/blob/main/API_data_OUTPUT.png" alt="API output">
 </div>
 
 - **Krav 3**
@@ -100,7 +100,7 @@ Som angivet i ovenstående afsnit, så testes hver enkelt funktion med tilhøren
 
   Efter sensoren er forbundet så indlæses indholdet af "HMC5883.cpp" til device og et eksempel på hvordan resultatet ser ud ses i "HMC5883_OUTPUT.png" filen og herunder:
 
-  ![Output2](https://github.com/BazookaBan/5.semester-IoT/blob/main/HCM5883_OUTPUT.png "Output Sensor")
+  ![Output2](https://github.com/BazookaBan/5.semester-IoT/blob/main/HCM5883_OUTPUT.png "Output Sensor" width="500" height="400")
 
   På billedet kan det ses hvordan aflæsningerne for X, Z og Y planen sammen med omregningen til "heading" og "direction" vises på Particle Console(som Event). Data bliver flyttet fra sensoren til Particle Argon via I2C protokollen, og herefter til Particle Console med en Particle.publish kommando.
 
@@ -119,7 +119,7 @@ Efter arbejdet med ovenstående krav - især omkring krav 3 - samles de to koder
 
 
 <div align="center">
-  <img src="https://github.com/BazookaBan/5.semester-IoT/blob/main/IoT_Merged_OUTPUT.png" alt="IoT Merged Output" width="300" height="200">
+  <img src="https://github.com/BazookaBan/5.semester-IoT/blob/main/IoT_Merged_OUTPUT.png" alt="IoT Merged Output">
 </div>
 
   

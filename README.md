@@ -50,11 +50,11 @@ Latitude = Breddegrad. Angiver en position nord for ækvator
 
 For at få indarbejdet de opstillede krav til opgaven, så arbejdes der primært med disse én ad gangen. Dette sikre større overblik og kontrol over de enkelte funktioner, men gør det også nemmere for projektet, da der løbende kan bygges ovenpå eksisterende løsninger efterhånden som de kan verfificeres. 
 
-- Vedr. krav 1:\
+- Vedr. **krav 1:**\
   Particle Argon forbundes med USB-kabel til computeren og herefter oprettes forbindelse til lokalt Wi-Fi netværk. Der oprettes en konto på "Particle Console" som giver mulighed for at overvåge aktiviteten    for ens device, oprette og redigere Webhooks, følge med i events samt meget andet. \
   Som IDE installeres Microsofts Visual Studio Code(herefter VSC) og der installeres udvidelsespakken "Particle Workbench" som giver mulighed for at interagere med Particle Argon direkte fra VSC, herunder     at opdatere firmware, installere 3. parts biblioteker, compile kode og flashe denne direkte.\
 
-- Vedr. krav 2:\
+- Vedr. **krav 2:**\
   Der oprettes et Webhook kaldet "ISS Tracking" med et event kaldet "Tracking". Da der skal importeres data ind til Particle Argon, så angives request type som "Get" og der angives følgende link som kilde 
   til positionsoplysninger for ISS:\
   
@@ -68,15 +68,14 @@ For at få indarbejdet de opstillede krav til opgaven, så arbejdes der primært
 
 Dette gøres, da API-linket returnerer en del informationer som ikke er relevante for dette projekt, f.eks. hastigheden, timestamps og position ifht. solen, så bruges ovenstående til at kun lade de relevante data passere til koden når eventet "tracking" bliver kaldt. 
 
--Vedr. krav 3:\
+-Vedr. **krav 3:**\
 Der indkøbes en [HMC5883 sensor fra Arduinotech](https://arduinotech.dk/shop/3-axis-electronic-compass-magnetometer-sensor-module/) til brug i dette projekt. Denne er valgt, da den opfylder de basale krav om at kunne måle magnetisk kraft i X, Y og Z retning, den kan drives med 3.3V direkte fra Particle Argon samtidigt med, der var umiddelbart understøttelse af denne sensor gennem [Particle Liberaies HMC5883](https://docs.particle.io/reference/device-os/libraries/a/Adafruit_HMC5883/). 
 
 Det lykkedes dog ikke at få denne firmware til køre på Particle Argon - formentligt grundet for store versionsforskelle mellem denne oprindelige firmware også de nyere der er tilgængelige. Der forsøges at bruge ældre firmware til Particle Argon, men uden held. Derfor importeres og bruges [følgende kode fra ControlEverything]( https://github.com/ControlEverythingCommunity/HMC5883/blob/master/Particle/HMC5883.ino). Koden gør brug af I2C kommunikationsprotokol til at forbinde mellem sensoren og Particle Argon. Efter aflæsninger omdannes målinger til enheden "Gauss" som repræsentation for mængden af magnetisk kraft. 
 
-Vedr. krav 4:
+Vedr. **krav 4**:
 
-Efter der er installeret og opsat en programmeringsmiljø(krav 1) til brug med Particle Argon, og efter der er kan hentes API-data ind og vist på terminalen(krav 2), og efter der er etableret forbindelse til en lokal sensor(krav 3), så laves en samlet kode hvor alle funktionerne bliver samlet. 
-  
+Efter der er installeret og opsat et programmeringsmiljø(krav 1) til brug med Particle Argon, og efter der er kan hentes API-data ind og vist på terminalen(krav 2), og efter der er etableret forbindelse til en lokal sensor(krav 3), så laves en samlet kode hvor alle funktionerne bliver samlet samme sted.   
   
   
 ## 6.0 Test & Verifikation

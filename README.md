@@ -122,7 +122,11 @@ Som angivet i ovenstående afsnit, så testes hver enkelt funktion med tilhøren
 
 ## 8.0 Perspektivering og fremtidigt arbejde
 
+### 8.1 Cyber Secuirty
 
+### 8.2 Machine Learning
+
+## 8.3 Low Power 
 
 
 ## 9.0 Løbende opdateringer

@@ -88,7 +88,28 @@ Som angivet i ovenstående afsnit, så testes hver enkelt funktion med tilhøren
 - **Krav 2**
   Der tages udgangspunkt i den første kode der arbejdes med i dette kursus, hvilket er [koden tilhørende det første Webhook](https://docs.particle.io/integrations/webhooks/). Denne modificeres til brug i dette projekt og den færdige kode kan ses i "API_data.ino" filen. Et eksempel på hvordan output ser ud kan findes i "API_data_OUTPUT" filen og herunder:
 
-  ![Output2](https://github.com/BazookaBan/5.semester-IoT/blob/main/API_data_OUTPUT.png "Output")
+  ![Output1](https://github.com/BazookaBan/5.semester-IoT/blob/main/API_data_OUTPUT.png "Output API")
+
+- **Krav 3**
+  For dette krav importeres den tidligere omtalte kode fra anden Github side. Herefter forbindes sensoren til Particle Argon via SCL og SCA som vist på tegningen herunder:
+
+
+  "INDSÆT TEGNING!\
+
+  Efter sensoren er forbundet så indlæses indholdet af "HMC5883.cpp" til device og et eksempel på hvordan resultatet ser ud ses i "HMC5883_OUTPUT" filen og herunder:
+
+  ![Output2](https://github.com/BazookaBan/5.semester-IoT/blob/main/HCM5883_OUTPUT.png "Output Sensor")
+
+  På billedet kan det ses hvordan aflæsningerne for X, Z og Y planen sammen med omregningen til "heading" og "direction" vises på Particle Console(som Event). Data bliver flyttet fra sensoren til Particle Argon via I2C protokollen, og herefter til Particle Console med en Particle.publish kommando.
+
+  For at efterprøve aflæsningen og den efterfølgende omregning, så sammenlignes resultatet med med et kompas fra en indbygget app på en iPhone 15. Desværre viser det sig, at angivelsen af retningen ikke er stabil. 
+
+
+- **Krav 4**
+
+  
+
+  
 
 ## Aspekter af Cyber Security
 

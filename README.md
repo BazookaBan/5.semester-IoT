@@ -82,7 +82,11 @@ Efter der er installeret og opsat et programmeringsmiljø(krav 1) til brug med P
 
 Som angivet i ovenstående afsnit, så testes hver enkelt funktion med tilhørende kode individuelt før der fortsættes til næste funktion(angivet som krav). 
 
--
+- **Krav 1**
+  Dette krav testet ved at være et fungerende udviklingsmiljø inden arbejdet med denne opgave startes. Dog opnås aldrig adgang til funktionen "local compile" som sikre, at der kan compiles på lokalt på device. Der fremkommer fejl relateret til C++ compileren, og selvom denne fjernes og installeres igen, så udbedres problemet ikke. Løsningen bliver i stedet, at bruge "cloud compile" som gør, at beskeden om at compile et program sendes via internettet i stedet for lokalt via USB-kabel. Dette tager en smule længere tid, men accepteres som en fornuftig løsning.
+
+- **Krav 2**
+  Der tages udgangspunkt i den første kode der arbejdes med i dette kursus, hvilket er [koden tilhørende det første Webhook](https://docs.particle.io/integrations/webhooks/). Denne modificeres til brug i dette projekt og den færdige kode kan ses i "API_data.ino" filen. Et eksempel på hvordan output ser ud kan findes i "API_data_OUTPUT" filen. 
 
 ## Aspekter af Cyber Security
 

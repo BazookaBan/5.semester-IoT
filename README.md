@@ -60,9 +60,12 @@ Latitude = Breddegrad. Angiver en position nord for ækvator
 
   Latitude: {{latitude}},
   Longitude: {{longitude}},
-  Visibility: {{visibility}}\
+  Visibility: {{visibility}},
 
   Da API-linket returnerer en del informationer som ikke er relevante for dette projekt, f.eks. hastigheden, timestamp og position ifht. solen, så bruges ovenstående til at kun lade de relevante data passere til koden:\
+
+  -Vedr. Krav 3:\
+   
 
   
   

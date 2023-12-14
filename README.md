@@ -51,9 +51,13 @@ Funktionalitet: Den nuværende retning sammen med data om ISS' nuværende positi
 
 ## 8.0 Løbende opdateringer
 
-*4/12/2023
+*14/12/2023*
 
-Kode der modtager API data og printer dette til console samt laver publish til events, er nu lagt online sammen med eksempel på output. 
+Kode der aflæser lokal sensor og laver publish til til events, er nu lagt online(HMC5883) sammen med eksempel på output(HMC5883_OUTPUT).
+
+*4/12/2023*
+
+Kode der modtager API data og printer dette til console samt laver publish til events, er nu lagt online(IoT_Project) sammen med eksempel på output(IoT_project_OUTPUT). 
 Fortsat en udfordring at få brug JsonParser til at scanne for data og placere i variabler som der kan laves beregninger på. 
 
 *19/11/2023*

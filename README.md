@@ -1,16 +1,16 @@
 # 5.semester - IoT
-Af Jannik Thygesen
+Af Jannik Thygesen, 
 
 ## 1.0 Introduktion 
 
-Sideløbende med undervisningen i "EH5IOT-01 Internet of Things" arbejdes der på et IoT projekt. Arbejdet med dette projekt dokumenteres løbende i denne rapport og ved afslutningen af semeseret, så afleveres rapporten via Digital Eksamen på AU. Det er muligt at 
+Sideløbende med undervisningen i "EH5IOT-01 Internet of Things" arbejdes der på et IoT projekt. Arbejdet med dette projekt dokumenteres løbende i denne rapport og ved afslutningen af semeseret, så afleveres rapporten via Digital Eksamen på AU. 
 
-Projeket skal have disse grundlæggende krav opfyldt(fuld liste ses på Brightspace):
+Projeket skal have disse grundlæggende krav opfyldt(fuld liste ses på Brightspace, Exam Project):
 
-- Skal drives af en Particle Argon eller lignende
-- Skal være forbundet til internettet og bruge data fra internettet
-- Skal være forbundet til lokal enhed, fx sensor eller ligende og bruge data fra lokal enhed
-- Skal **samlet** have en bedre funktionalitet end tilsvarende system uden adgang til internettet
+- Krav 1: Skal drives af en Particle Argon eller lignende 
+- Krav 2: være forbundet til internettet og bruge data fra internettet
+- Krav 3: Skal være forbundet til lokal enhed, fx sensor eller ligende og bruge data fra lokal enhed
+- Krav 4: Systemet Skal **samlet** have en bedre funktionalitet end tilsvarende system uden adgang til internettet
 
 ## 2.0 Ide- projektbeskrivelse for IoT-projektet
   
@@ -21,9 +21,19 @@ Rumstationen ISS flyver konstant rundt om jorden og viser sig ved forskellige ge
 Derfor er ideen, at få data fra ISS Tracking API ned til Particle Argon. Derudover skal der tilkobles en magnetometer til Partile Argon som kan måle retningen du kigger i. På baggrund af de to oplysninger skal det fremgå af konsolen hvorvidt du peger Particle Argon i den rigtige retning for at øge dine chancer for at se rumstationen på himmelen. 
 
 
-
-
 ## 3.0 Krav analyse
+
+- Krav 1:
+  Projektet drives af en Particle Argon. Denne udleveret af underviser. Der er desuden indkøbt en Particle Photon 2 som backup og til udvikling i fremtiden.
+  
+- Krav 2:
+  Fra Particle Console oprettes et Webhook der peger på en webpage med positionsoplysninger for ISS som API data. Da API-linket returnerer flere oplysninger end der skal bruges i dette projekt, så er der lavet en sortering af disse under "Advanced Setting".
+
+- Krav 3:
+  Der er valgt et HCM5883 magnetometer til dette projektet. Denne lokale sensor måler magnetisk styrke i et X-Y-Z-plan, og resultatet af dette kan bruges til beregningen af retningen sensoren vender.
+
+- Krav 4:
+  Ved at sammenkoble ovenstående tre krav, så opfylder systemet kravene til projektet ved at indeholde internetdata samt lokal data og derudover, at virke bedre end ikke at være forbundet til internettet. I dette projekt ses ved at give oplysninger om placeringen af rumstationen ISS. Uden disse oplysninger ville det være umuligt for brugeren at vide hvilken retning der skulle kigges i. 
 
 ## 4.0 System design
 

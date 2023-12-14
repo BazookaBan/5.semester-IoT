@@ -58,15 +58,19 @@ Latitude = Breddegrad. Angiver en position nord for ækvator
   
   https://api.wheretheiss.at/v1/satellites/25544
   
-  Under Advanced Settings angives følgende parametre:\
+  Under Advanced Settings angives følgende parametre til Response Template:\
 
   Latitude: {{latitude}},
   Longitude: {{longitude}},
   Visibility: {{visibility}},
 
-  Da API-linket returnerer en del informationer som ikke er relevante for dette projekt, f.eks. hastigheden, timestamp og position ifht. solen, så bruges ovenstående til at kun lade de relevante data passere til koden:\
+Dette gøres, da API-linket returnerer en del informationer som ikke er relevante for dette projekt, f.eks. hastigheden, timestamps og position ifht. solen, så bruges ovenstående til at kun lade de relevante data passere til koden når eventet "tracking" bliver kaldt. 
 
-  -Vedr. Krav 3:\
+  -Vedr. Krav 3:
+
+  
+
+  
    
 
   

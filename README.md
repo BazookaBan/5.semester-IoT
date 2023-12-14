@@ -124,13 +124,8 @@ Efter arbejdet med ovenstående krav - især omkring krav 3 - samles de to koder
   <img src="https://github.com/BazookaBan/5.semester-IoT/blob/main/IoT_Merged_OUTPUT.png" alt="IoT Merged Output">
 </div>
 
-  
+På billedet ses resultatet af fra importen af API-data samt resultatet af indlæsning og omregningen sensor data i terminalen på VSC. 
 
-  
-
-## Aspekter af Cyber Security
-
-## Aspekter af Machine Learning
 
 ## 7.0 Konklusion
 

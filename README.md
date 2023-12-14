@@ -102,7 +102,10 @@ Som angivet i ovenstående afsnit, så testes hver enkelt funktion med tilhøren
 
   På billedet kan det ses hvordan aflæsningerne for X, Z og Y planen sammen med omregningen til "heading" og "direction" vises på Particle Console(som Event). Data bliver flyttet fra sensoren til Particle Argon via I2C protokollen, og herefter til Particle Console med en Particle.publish kommando.
 
-  For at efterprøve aflæsningen og den efterfølgende omregning, så sammenlignes resultatet med med et kompas fra en indbygget app på en iPhone 15. Desværre viser det sig, at angivelsen af retningen ikke er stabil. 
+  For at efterprøve aflæsningen og den efterfølgende omregning, så sammenlignes resultatet med med et kompas fra en indbygget app på en iPhone 15. Desværre viser det sig, at angivelsen af retningen ikke er stabil. Der vises oftest forkert retning, ligesom retningen ændres selvom sensoren ikke flyttes. Sensoren kan udemærket registerere ændringer, men disse ikke altid korrekt. Ved at kigge på de data der fremkommer af koden, så formodes problemet at ligge i de data der ligger til grund for udregningen, da selv ændringer giver store spring i tallene. Der forsøges flere tiltag for at sikre stabil retningsangivelse.
+  * Item 1
+  * Item 2
+  * Item 3
 
 
 - **Krav 4**

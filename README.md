@@ -40,6 +40,10 @@ Funktionalitet: Den nuværende retning sammen med data om ISS' nuværende positi
 
 ## 6.0 Test & Verifikation
 
+## Aspekter af Cyber Security
+
+## Aspekter af Machine Learning
+
 ## 7.0 Konklusion
 
 

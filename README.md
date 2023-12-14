@@ -49,6 +49,7 @@ Funktionalitet: Den nuværende retning sammen med data om ISS' nuværende positi
 ## 5.0 Implementering
 
 - Vedr. Krav 1:\
+  Particle Argon forbundes med USB-kabel til computeren og herefter oprettes forbindelse til lokalt Wi-Fi netværk. Der oprettes en konto på "Particle Console" som giver mulighed for at overvåge aktiviteten for ens device, oprette og redigere Webhooks, følge med i events samt meget andet. \
   Som IDE installeret Microsofts Visual Studio Code(herefter VSC) og der installeres udvidelsespakken "Particle Workbench" som giver mulighed for at interagere med Particle Argon direkte fra VSC, herunder at opdatere firmware, installere 3. parts biblioteker, compile kode og flashe denne direkte.
 
 

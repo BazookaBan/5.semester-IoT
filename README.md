@@ -135,7 +135,7 @@ På billedet ses resultatet af fra importen af API-data samt resultatet af indl�
 
 ### 8.2 Machine Learning
 
-## 8.3 Low Power 
+### 8.3 Low Power 
 
 
 ## 9.0 Løbende opdateringer

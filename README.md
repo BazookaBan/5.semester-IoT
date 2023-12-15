@@ -133,6 +133,10 @@ Samlet set lykkedes det at designe et IoT-system som arbejder med de krav der er
 
 ## 8.0 Perspektivering og fremtidigt arbejde
 
+Der er flere oplagte tiltag der kan arbejdes med såfremt der ønskes flere og/eller bedre funktioner af dette IoT-system. Først og fremmest er det oplagt, at arbejde med det indkomne API-data til systemet. Selve angivelsen længdebred og breddegrad giver ikke den store information til brugeren om den nuværende lokation af ISS. Derfor var der arbejdet med en udvidelse af koden som skulle tage indholdet fra API feedbacket og placere det i variabler der herefter kunne bruges til omregning og videre behandling. På den måde skulle der ske en løbende omregning af længdegred og breddegrad til mere konkret stedsangivelse på jorden. Yderligere kunne systemet designes således, at brugeren fik besked på hvornår ISS var tæt på ens nuværende placering og brugeren var derfor ikke afhængig af at kontrollere dette konstant. 
+
+Der er også oplagte forbedringer til den del af koden der arbejder med den lokale sensor data. Udover at arbejde med en mere pålidelig sensortilslutning, så kunne de tænkte variabler 
+
 ### 8.1 Cyber Secuirty
 
 ### 8.2 Machine Learning
@@ -141,6 +145,10 @@ Samlet set lykkedes det at designe et IoT-system som arbejder med de krav der er
 
 
 ## 9.0 Løbende opdateringer
+
+*15/12/2023*
+
+Der skrives på rapporten og der produceres indhold, billeder, grafer osv. 
 
 *14/12/2023*
 

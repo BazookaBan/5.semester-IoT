@@ -100,7 +100,7 @@ Som angivet i ovenstående afsnit, så testes hver enkelt funktion med tilhøren
 
   Efter sensoren er forbundet så indlæses indholdet af "HMC5883.cpp" til device og et eksempel på hvordan resultatet ser ud ses i "HMC5883_OUTPUT.png" filen og herunder:
   <div align="center">
-  <img src="https://github.com/BazookaBan/5.semester-IoT/blob/main/HCM5883_OUTPUT.png" alt="Sensor output" width="800" height="500">
+  <img src="https://github.com/BazookaBan/5.semester-IoT/blob/main/HCM5883_OUTPUT.png" alt="Sensor output" width="800" height="450">
 </div>
   
 
@@ -111,7 +111,7 @@ Som angivet i ovenstående afsnit, så testes hver enkelt funktion med tilhøren
   * Gennemgået de fysiske forbindelser fra Particle Argon til Sensor og udskiftet ledninger
   * Gennemgået miljøet for ydre, forstyrrende magnetisk påvirkning og flyttet sensoren så langt væk fra Particle Argon som muligt
   * Gennemgået lodninger på sensoren for oplagte fejl ved lodning af pins
-  * Arbejdet med kalibering
+  * Arbejdet med kalibrering
  
   Desværre har det ikke været muligt at finde en oplagt fejl som har kunne udbedres. Det er vurderingen, at den mest sandsynlige fejl er mangelfuld kalibering og/eller dårlig forbindelser ved lodning. 
 
@@ -128,6 +128,8 @@ På billedet ses resultatet af fra importen af API-data samt resultatet af indl�
 
 
 ## 7.0 Konklusion
+
+Samlet set lykkedes det at designe et IoT-system som arbejder med de krav der er stillet til opgaven. De enkelte krav til projektet er brudt ned til mindre størrelser, og herefter implementeret og testet en ad gangen. I sidste ende er det lykkedes at arbejde med data fra internettet såvel som data som lokal data fra en sensor. Det er desværre ikke helt lykkedes at lave en pålidelig afmåling af den lokalt indhentede data fra HMC5883 sensor. Selvom der er gjort flere forsøg på at udbedre dette, så lykkedes det desværre ikke i sidste ende. 
 
 ## 8.0 Perspektivering og fremtidigt arbejde
 

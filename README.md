@@ -149,7 +149,9 @@ F.eks. kunne der installeres et bibliotek som [OpenSSL](https://www.openssl.org/
 
 ### 8.2 Aspekter af Machine Learning for dette IoT-system
 
-En anden måde dette IoT-system kan forbedres 
+En anden måde dette IoT-system kan forbedres på, er gennem brugen af Machine Learning(ML). Brug af ML kræver, at man indsamler data som man bruger til at bygge en model som herefter kan bruges af ens IoT-enhed. Konkret for dette projekt, så kunne man forestille sig at bygge et datasæt bestående af positionsoplysninger med ISS til bestemte tidspunkter på døgnet. Disse data kunne så klassificeres med de korrekte labels og gemmes som et datasæt. Herefter kan man designe en ML algoritme på ens Particle Argon, dette kunne f.eks. være en neural model der er sammesat af forskellige lag bedst egnet til at håndtere disse data. Det er også muligt at vælge en klassisk model som f.eks. RandomForest som fungerer som en regressionsmodel. 
+
+Når der er valgt en passende algoritme, så vil denne kunne modtage datasættet og trænes til at genkende sammenhængen mellem tidspunktet på dagen, ens geografiske placering også positionen for ISS rumstationen. Dette kunne øge brugbarheden af IoT-systemet ved at være mindre afhæning af API-data for at kunne fastslå placeringen af ISS på himmelen. Såfremt der er manglende internetforbindelse, vil det alene være resultatet af ML modellen som bruges til at angive retningen for ISS. 
 
 ### 8.3 Low Power 
 

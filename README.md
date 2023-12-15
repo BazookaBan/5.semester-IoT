@@ -10,7 +10,7 @@ Projeket skal have disse grundlæggende krav opfyldt(fuld liste ses på Brightsp
 - Krav 1: Skal drives af en Particle Argon eller lignende 
 - Krav 2: være forbundet til internettet og bruge data fra internettet
 - Krav 3: Skal være forbundet til lokal enhed, fx sensor eller ligende og bruge data fra lokal enhed
-- Krav 4: Systemet Skal **samlet** have en bedre funktionalitet end tilsvarende system uden adgang til internettet
+- Krav 4: Systemet skal **samlet** have en bedre funktionalitet end tilsvarende system uden adgang til internettet
 
 ## 2.0 Ide- projektbeskrivelse for IoT-projektet
   
@@ -135,7 +135,9 @@ Samlet set lykkedes det at designe et IoT-system som arbejder med de krav der er
 
 Der er flere oplagte tiltag der kan arbejdes med såfremt der ønskes flere og/eller bedre funktioner af dette IoT-system. Først og fremmest er det oplagt, at arbejde med det indkomne API-data til systemet. Selve angivelsen længdebred og breddegrad giver ikke den store information til brugeren om den nuværende lokation af ISS. Derfor var der arbejdet med en udvidelse af koden som skulle tage indholdet fra API feedbacket og placere det i variabler der herefter kunne bruges til omregning og videre behandling. På den måde skulle der ske en løbende omregning af længdegred og breddegrad til mere konkret stedsangivelse på jorden. Yderligere kunne systemet designes således, at brugeren fik besked på hvornår ISS var tæt på ens nuværende placering og brugeren var derfor ikke afhængig af at kontrollere dette konstant. 
 
-Der er også oplagte forbedringer til den del af koden der arbejder med den lokale sensor data. Udover at arbejde med en mere pålidelig sensortilslutning, så kunne de tænkte variabler 
+Der er også oplagte forbedringer til den del af koden der arbejder med den lokale sensor data. Udover at arbejde med en mere pålidelig sensortilslutning, så kunne de tænkte variabler med indholdet af API data bruges til sammenligning med den data fra den lokale sensor til angivelse af position og retning. 
+
+
 
 ### 8.1 Cyber Secuirty
 

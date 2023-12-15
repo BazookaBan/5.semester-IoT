@@ -139,7 +139,13 @@ Der er også oplagte forbedringer til den del af koden der arbejder med den loka
 
 
 
-### 8.1 Cyber Secuirty
+### 8.1 Aspekter af Cyber Security for dette IoT-system
+
+Sideløbende med arbejdet af dette projekt har der været undervisning i forskellige emner der relaterer sig til IoT-enheder og deres funktioner. Et af disse emner har været kryptografi og emner indenfor cyber secuirty, som det ville være relvante at gøre sig overvejelser om hvordan det kan implementeres i dette system. Selvom placeringen af ISS altid er kendt for offentligheden, så kunne samme IoT-system som omtalt i denne rapport bruges til at tracke en sattelit, køretøjer som biler, både, fly eller lignende samt mange andre ting. Såfremt deres placering skulle holdes hemmelig for alle andre end brugeren af dette system, så kunne lokationsdata krypteres.
+
+F.eks. kunne der installeres et bibliotek som [OpenSSL](https://www.openssl.org/) hos både afsender og modtager. Med dette bibliotek kunne lokationsdata først krypteres til fra plaintext til ciphertext dette gøres fra den afsendende enhed med en nøgle. Herefter kan den kodede ciphertext sendes af sted og modtageren kan bruge sin key til at oversætte ciphertexten tilbage til plaintext. På den måde kan afsende lokationen på en enhed, men kun den rigtige modtager af modtager vil være i stand til at afkryptere beskeden med sin key. 
+
+
 
 ### 8.2 Machine Learning
 

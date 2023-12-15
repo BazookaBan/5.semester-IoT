@@ -147,7 +147,9 @@ F.eks. kunne der installeres et bibliotek som [OpenSSL](https://www.openssl.org/
 
 
 
-### 8.2 Machine Learning
+### 8.2 Aspekter af Machine Learning for dette IoT-system
+
+En anden måde dette IoT-system kan forbedres 
 
 ### 8.3 Low Power 
 

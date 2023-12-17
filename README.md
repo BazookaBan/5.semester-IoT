@@ -41,15 +41,19 @@ Grundlæggende er systemet opbygget af både hardware og software. Her forsøges
 
 - Hardware
 
-  En HMC5883 magnetisk sensor er forbundet til Particle Argon. Der er brugt to pull-up modstande og ledninger til denne forbindelse.\
+  En HMC5883 magnetisk sensor er forbundet til Particle Argon. Der er brugt to pull-up modstande og ledninger til denne forbindelse.
   
-  En computer er forbundet med USB kabel til Particle Argon.
+  Particle Argon er forbundet til en computer med USB kabel. 
 
 - Software
 
   Under afvikling af koden(IoT_Merged.cpp), så aktiveres et Webhook med et event kaldet "tracking". Når dette event bliver kaldt, så hentes API data fra det angivne link og myHandler funktionen bliver aktiveret, hvilket betyder det efterspurgte data printes i terminalen.
 
-  Udover at hente API data, så sker der også en lokal indhentning af data fra HMC5883 sensoren. Under afvikling af koden(IoT_Merged.cpp), så sættes der en I2C forbindelse op mellem Particle Argon og sensoren. Dette inkluderer bl.a. at angive variabler(data) til overførslen af data mellem sensor og Particle Argon samt foretage løbende omregninger af denne. Når data er modtaget bliver det placeret som 16-bit signed integers. Disse tal bruges herefter til at beregne "Heading"(0 til 360) og igen til beregne "Direction"(North, East, South, West). Resultatet af disse omregninger bliver både vist på Particle Console med Particle.Publish ligesom "Direction" printes i terminalen sammen med API dataen. 
+  Udover at hente API data, så sker der også en lokal indhentning af data fra HMC5883 sensoren. Under afvikling af koden(IoT_Merged.cpp), så sættes der en I2C forbindelse op mellem Particle Argon og sensoren. Dette inkluderer bl.a. at angive variabler(data) til overførslen af data mellem sensor og Particle Argon samt foretage løbende omregninger af denne. Når data er modtaget bliver det placeret som 16-bit signed integers. Disse tal bruges herefter til at beregne "Heading"(0 til 360) og igen til beregne "Direction"(North, East, South, West). Resultatet af disse omregninger bliver både vist på Particle Console med Particle.Publish ligesom "Direction" printes i terminalen sammen med API dataen.
+
+En grundlæggende oversigt over systemet kan ses herunder og i pdf-filen "swimlanes-systemoversigt"
+
+
   
 ## 5.0 Implementering
 

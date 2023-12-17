@@ -41,11 +41,12 @@ Grundlæggende er systemet opbygget af både hardware og software. Her forsøges
 
 - Hardware
 
-  En HMC5883 magnetisk sensor er forbundet til Particle Argon. Der er brugt to pull-up modstande og ledninger til denne forbindelse. En computer er forbundet med USB kabel til Particle Argon.
+  En HMC5883 magnetisk sensor er forbundet til Particle Argon. Der er brugt to pull-up modstande og ledninger til denne forbindelse.
+  En computer er forbundet med USB kabel til Particle Argon.
 
 - Software
 
-  
+  Under afvikling af koden 
 
 
 

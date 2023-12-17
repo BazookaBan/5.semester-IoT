@@ -1,4 +1,7 @@
 ## Løbende opdateringer for IoT-projektet
+*17/12/2023*
+
+Der skrives på rapporten.
 
 *15/12/2023*
 

@@ -51,7 +51,13 @@ Grundlæggende er systemet opbygget af både hardware og software. Her forsøges
 
   Udover at hente API data, så sker der også en lokal indhentning af data fra HMC5883 sensoren. Under afvikling af koden(IoT_Merged.cpp), så sættes der en I2C forbindelse op mellem Particle Argon og sensoren. Dette inkluderer bl.a. at angive variabler(data) til overførslen af data mellem sensor og Particle Argon samt foretage løbende omregninger af denne. Når data er modtaget bliver det placeret som 16-bit signed integers. Disse tal bruges herefter til at beregne "Heading"(0 til 360) og igen til beregne "Direction"(North, East, South, West). Resultatet af disse omregninger bliver både vist på Particle Console med Particle.Publish ligesom "Direction" printes i terminalen sammen med API dataen.
 
-En grundlæggende oversigt over systemet kan ses herunder og i pdf-filen "swimlanes-systemoversigt"
+En grundlæggende oversigt over systemet kan ses herunder og i pdf-filen "swimlanes-systemoversigt":
+
+ <div align="center">
+  <img src="https://github.com/BazookaBan/5.semester-IoT/blob/main/swimlanes-systemoversigt.png" alt="Sensor output" width="800" height="450">
+</div>
+
+
 
 
   

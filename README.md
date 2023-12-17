@@ -39,6 +39,14 @@ Derfor er ideen, at få data fra ISS Tracking API ned til Particle Argon. Derudo
 
 Grundlæggende er systemet opbygget af både hardware og software. Her forsøges at opstille hvordan de enkelte dele arbejder sammen når systemet i er i drift. 
 
+- Hardware
+
+  En HMC5883 magnetisk sensor er forbundet til Particle Argon. Der er brugt to pull-up modstande og ledninger til denne forbindelse. En computer er forbundet med USB kabel til Particle Argon.
+
+- Software
+
+  
+
 
 
 For at få data udefra: Der er oprettet et Webhook som er forbundet til ISS tracking API. Fra VSU bruges "particle.subscribe" til at få adgang til dette data og dette skal vises i terminalen.

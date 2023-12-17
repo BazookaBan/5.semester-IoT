@@ -115,10 +115,7 @@ Som angivet i ovenstående afsnit, så testes hver enkelt funktion med tilhøren
 </div>
 
 - **Krav 3**
-  For dette krav importeres den tidligere omtalte kode fra anden Github side. Herefter forbindes sensoren til Particle Argon via SCL og SCA som vist på tegningen herunder:
-
-
-  "INDSÆT TEGNING!\
+  For dette krav importeres den tidligere omtalte kode fra anden Github side. Herefter forbindes sensoren til Particle Argon via SCL og SCA som vist på tegningen i afsnit 5.
 
   Efter sensoren er forbundet så indlæses indholdet af "HMC5883.cpp" til device og et eksempel på hvordan resultatet ser ud ses i "HMC5883_OUTPUT.png" filen og herunder:
   <div align="center">

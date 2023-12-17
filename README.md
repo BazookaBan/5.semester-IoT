@@ -65,8 +65,8 @@ En grundlæggende oversigt over systemet kan ses herunder og i pdf-filen "swimla
 
 For at få indarbejdet de opstillede krav til opgaven, så arbejdes der primært med disse én ad gangen. Dette sikre større overblik og kontrol over de enkelte funktioner, men gør det også nemmere for projektet, da der løbende kan bygges ovenpå eksisterende løsninger efterhånden som de kan verfificeres. Hele systemet forbindes som vist på tegningen herunder og i png-filen "systemSamlet": 
 
-<div align="center">
-  <img src="[https://github.com/BazookaBan/5.semester-IoT/blob/main/swimlanes-systemoversigt.png](https://github.com/BazookaBan/5.semester-IoT/blob/main/systemSamlet.png)" alt="Forbindelser" width="800" height="450">
+ <div align="center">
+  <img src="https://github.com/BazookaBan/5.semester-IoT/blob/main/systemSamlet.png" alt="Forbindelser" width="800" height="450">
 </div>
 
 

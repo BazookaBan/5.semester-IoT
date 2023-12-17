@@ -54,7 +54,7 @@ Grundlæggende er systemet opbygget af både hardware og software. Her forsøges
 En grundlæggende oversigt over systemet kan ses herunder og i pdf-filen "swimlanes-systemoversigt":
 
  <div align="center">
-  <img src="https://github.com/BazookaBan/5.semester-IoT/blob/main/swimlanes-systemoversigt.png" alt="Sensor output" width="800" height="450">
+  <img src="https://github.com/BazookaBan/5.semester-IoT/blob/main/swimlanes-systemoversigt.png" alt="System overview" width="800" height="450">
 </div>
 
 
@@ -63,7 +63,14 @@ En grundlæggende oversigt over systemet kan ses herunder og i pdf-filen "swimla
   
 ## 5.0 Implementering
 
-For at få indarbejdet de opstillede krav til opgaven, så arbejdes der primært med disse én ad gangen. Dette sikre større overblik og kontrol over de enkelte funktioner, men gør det også nemmere for projektet, da der løbende kan bygges ovenpå eksisterende løsninger efterhånden som de kan verfificeres. 
+For at få indarbejdet de opstillede krav til opgaven, så arbejdes der primært med disse én ad gangen. Dette sikre større overblik og kontrol over de enkelte funktioner, men gør det også nemmere for projektet, da der løbende kan bygges ovenpå eksisterende løsninger efterhånden som de kan verfificeres. Hele systemet forbindes som vist på tegningen herunder og i png-filen "systemSamlet": 
+
+<div align="center">
+  <img src="[https://github.com/BazookaBan/5.semester-IoT/blob/main/swimlanes-systemoversigt.png](https://github.com/BazookaBan/5.semester-IoT/blob/main/systemSamlet.png)" alt="Forbindelser" width="800" height="450">
+</div>
+
+
+
 
 - Vedr. **krav 1:**\
   Particle Argon forbundes med USB-kabel til computeren og herefter oprettes forbindelse til lokalt Wi-Fi netværk. Der oprettes en konto på "Particle Console" som giver mulighed for at overvåge aktiviteten    for ens device, oprette og redigere Webhooks, følge med i events samt meget andet. \

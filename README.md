@@ -1,5 +1,5 @@
 # 5.semester - IoT
-Af Jannik Thygesen, studienummer 
+Af Jannik Thygesen, studienummer 202107062
 
 ## 1.0 Introduktion 
 

@@ -1,4 +1,9 @@
 ## Løbende opdateringer for IoT-projektet
+
+*18/12/2023*
+
+Rapport gennemlæses, dannes som pdf og afleveres. 
+
 *17/12/2023*
 
 Der skrives på rapporten.

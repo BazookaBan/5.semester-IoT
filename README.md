@@ -49,7 +49,7 @@ Grundlæggende er systemet opbygget af både hardware og software. Her forsøges
 
   Under afvikling af koden(IoT_Merged.cpp), så aktiveres et Webhook med et event kaldet "tracking". Når dette event bliver kaldt, så hentes API data fra det angivne link og myHandler funktionen bliver aktiveret, hvilket betyder det efterspurgte data printes i terminalen.
 
-  Udover at hente API data, så sker der også en lokal indhentning af data fra HMC5883 sensoren. Under afvikling af koden(IoT_Merged.cpp), så sættes der en I2C forbindelse op mellem Particle Argon og sensoren. Dette inkluderer bl.a. at angive variabler(data) til overførslen af data mellem sensor og Particle Argon samt foretage løbende omregninger af denne. Når data er modtaget bliver det placeret som 16-bit signed integers. Disse tal bruges herefter til at beregne "Heading"(0 til 360) og igen til beregne "Direction"(North, East, South, West). Resultatet af disse omregninger bliver både vist på Particle Console med Particle.Publish ligesom "Direction" printes i terminalen sammen med API dataen.
+  Udover at hente API data, så sker der også en lokal indhentning af data fra HMC5883 sensoren. Under afvikling af koden(IoT_Merged.cpp), så sættes der en I2C forbindelse op mellem Particle Argon og sensoren. Dette inkluderer bl.a. at angive variabler(data) til overførslen af data mellem sensor og Particle Argon samt foretage løbende omregninger af denne. Når data er modtaget bliver det placeret som 16-bit signed integers. Disse tal bruges herefter til at beregne "Heading"(0 til 360 grader) og igen til beregne "Direction"(North, West, South, East). Resultatet af disse omregninger bliver både vist på Particle Console med Particle.Publish ligesom "Direction" printes i terminalen sammen med API dataen.
 
 En grundlæggende oversigt over systemet kan ses herunder og i pdf-filen "swimlanes-systemoversigt":
 
@@ -74,15 +74,15 @@ For at få indarbejdet de opstillede krav til opgaven, så arbejdes der primært
 
 - Vedr. **krav 1:**\
   Particle Argon forbundes med USB-kabel til computeren og herefter oprettes forbindelse til lokalt Wi-Fi netværk. Der oprettes en konto på "Particle Console" som giver mulighed for at overvåge aktiviteten    for ens device, oprette og redigere Webhooks, følge med i events samt meget andet. \
-  Som IDE installeres Microsofts Visual Studio Code(herefter VSC) og der installeres udvidelsespakken "Particle Workbench" som giver mulighed for at interagere med Particle Argon direkte fra VSC, herunder     at opdatere firmware, installere 3. parts biblioteker, compile kode og flashe denne direkte.\
+  Som IDE installeres Microsofts Visual Studio Code(herefter VSC) og der installeres udvidelsespakken "Particle Workbench" som giver mulighed for at interagere med Particle Argon direkte fra VSC, herunder     at opdatere firmware, installere 3. parts biblioteker, compile kode og flashe denne direkte.
 
 - Vedr. **krav 2:**\
   Der oprettes et Webhook kaldet "ISS Tracking" med et event kaldet "Tracking". Da der skal importeres data ind til Particle Argon, så angives request type som "Get" og der angives følgende link som kilde 
-  til positionsoplysninger for ISS:\
+  til positionsoplysninger for ISS:
   
   https://api.wheretheiss.at/v1/satellites/25544
   
-  Under Advanced Settings angives følgende parametre til Response Template:\
+  Under Advanced Settings angives følgende parametre til Response Template:
 
   Latitude: {{latitude}},\
   Longitude: {{longitude}},\
@@ -125,7 +125,7 @@ Som angivet i ovenstående afsnit, så testes hver enkelt funktion med tilhøren
 
   På billedet kan det ses hvordan aflæsningerne for X, Z og Y planen sammen med omregningen til "heading" og "direction" vises på Particle Console(som Event). Data bliver flyttet fra sensoren til Particle Argon via I2C protokollen, og herefter til Particle Console med en Particle.publish kommando.
 
-  For at efterprøve aflæsningen og den efterfølgende omregning, så sammenlignes resultatet med et kompas fra en indbygget app på en iPhone 15. Desværre viser det sig, at angivelsen af retningen ikke er stabil. Der vises oftest forkert retning, ligesom retningen ændres selvom sensoren ikke flyttes. Sensoren kan udemærket registerere ændringer, men disse ikke altid korrekt. Ved at kigge på de data der fremkommer af koden, så formodes problemet at ligge i de data der ligger til grund for udregningen, da selv ændringer giver store spring i tallene. Der forsøges flere tiltag for at sikre stabil retningsangivelse.
+  For at efterprøve aflæsningen og den efterfølgende omregning, så sammenlignes resultatet med et kompas fra en indbygget app på en iPhone 15. Desværre viser det sig, at angivelsen af retningen ikke er stabil. Der vises oftest forkert retning, ligesom retningen ændres selvom sensoren ikke flyttes. Sensoren kan udemærket registerere ændringer, men disse ikke altid korrekt. Ved at kigge på de data der fremkommer af koden, så formodes problemet at ligge i de data der ligger til grund for udregningen, da selv ændringer giver store spring for værdierne X, Y og Z. Der ses også eksempler på disse værdier kan skifte selvom sensoren er fuldstændigt i ro. Der forsøges flere tiltag for at sikre stabil retningsangivelse.
   * Gennemgået kode for fejl
   * Gennemgået de fysiske forbindelser fra Particle Argon til Sensor og udskiftet ledninger
   * Gennemgået miljøet for ydre, forstyrrende magnetisk påvirkning og flyttet sensoren så langt væk fra Particle Argon som muligt
